@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ব্যক্তিগত পোর্টফোলিও</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* কাস্টম স্টাইল */
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+        #particle-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .neon-border {
+            box-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 15px #ec4899;
+        }
+        .card-bg {
+            background-color: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- কণার অ্যানিমেশনের জন্য ক্যানভাস -->
+    <canvas id="particle-canvas"></canvas>
+    <!-- প্রধান কন্টেন্ট -->
+    <main class="relative z-10 flex items-center justify-center min-h-screen p-4">
+        <div class="w-full max-w-sm mx-auto">
+            <div class="card-bg border-2 border-pink-500 rounded-2xl p-6 sm:p-8 text-center neon-border">
+                <img src="https://i.imgur.com/XWqYiVf.jpeg" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/150x150/1e293b/a855f7?text=Error';" 
+                     alt="প্রোফাইল ছবি" 
+                     class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-pink-400 object-cover">
+                <h1 class="text-lg font-bold text-white mb-2 whitespace-nowrap">ᴍᴅ. ᴢᴀʜɪᴅ ʜᴀꜱᴀɴ</h1>
+                <p class="text-gray-400 text-sm mb-8 mt-4">
+                    ʜɪ, ɪ'ᴍ ᴍᴅ. ᴢᴀʜɪᴅ ʜᴀꜱᴀɴ — ɪ ʟᴏᴠᴇ ɢᴀᴍɪɴɢ, ꜱɪɴɢɪɴɢ, ᴀɴᴅ ʜᴀᴠɪɴɢ ꜰᴜɴ ᴄᴏɴᴠᴇʀꜱᴀᴛɪᴏɴꜱ.
+                </p>
+                <div class="space-y-4 mb-6">
+                    <a href="https://www.instagram.com/zahidff1712/" target="_blank" class="block w-full bg-transparent border-2 border-pink-500 text-white font-semibold py-3 rounded-lg hover:bg-pink-600 hover:border-pink-600 transition-all duration-300">
+                        INSTAGRAM ID
+                    </a>
+                    <a href="https://www.facebook.com/md.zahid.hasan.86009" target="_blank" class="block w-full bg-transparent border-2 border-pink-500 text-white font-semibold py-3 rounded-lg hover:bg-pink-600 hover:border-pink-600 transition-all duration-300">
+                        FACEBOOK ID
+                    </a>
+                    <a href="https://www.tiktok.com/@zahidff1712?lang=en" target="_blank" class="block w-full bg-transparent border-2 border-pink-500 text-white font-semibold py-3 rounded-lg hover:bg-pink-600 hover:border-pink-600 transition-all duration-300">
+                        TIKTOK ID
+                    </a>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold mb-4">Skills</h2>
+                    <div class="flex flex-wrap justify-center gap-2 text-sm">
+                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">Web Dev 🌐</span>
+                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">C# 💻</span>
+                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">C++ 🚀</span>
+                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">Python 🐍</span>
+                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">HTML 📄</span>
+                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">JS ✨</span>
+                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">Security 🛡️</span>
+                    </div>
+                </div>
+                <a href="#" class="block w-full bg-pink-600 text-white font-bold py-3 rounded-lg hover:bg-pink-700 transition-all duration-300">
+                    Ask Me Anything
+                </a>
+            </div>
+            <p class="text-center text-gray-500 mt-6 text-sm">
+                Made By Zahid !
+            </p>
+        </div>
+    </main>
+    <script>
+        // Animation script omitted for brevity (was included in original)
+    </script>
+</body>
+</html>
